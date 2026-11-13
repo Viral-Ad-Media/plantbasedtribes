@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Plant Based Tribes
 
-## Getting Started
+The plantbasedtribes.com site, rebuilt from scratch with **Next.js 15 (App Router)**, **Tailwind CSS v4**, **Neon Postgres** (via Drizzle ORM) and **Better Auth**.
 
-First, run the development server:
+It replaces the old WordPress site. The old site's backup was compromised with malware, so **no PHP, plugins or database from it were reused**. Only the following were recovered:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- the URL structure (all post slugs and category paths match the old site, so existing links and search rankings keep working)
+- 91 post images (each checked to be a real image file) in `public/images/`
+- the logo, brand colours (`#184906` green, `#F9C30C` yellow) and Poppins font
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The original post text was not in the backup, so all 63 posts in `content/posts/` were **newly written**. Review them before launch, especially the nutrition articles.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Recipe and article pages at the old URLs (`/lentil-soup`, `/category/recipe/diet/vegan`, …) with Recipe/Article JSON-LD for search engines
+- Home page, recipe index, category pages with sub-categories, search, tips and about pages
+- `sitemap.xml` and `robots.txt` generated from the database
+- Email and password accounts (Better Auth)
+- Admin area at `/admin` to create, edit, publish and delete posts (Markdown, sanitised on render)
 
-## Learn More
+## Getting started
 
-To learn more about Next.js, take a look at the following resources:
+1. Create a Neon project and copy the **pooled** connection string.
+2. `cp .env.example .env` and fill in `DATABASE_URL` and `BETTER_AUTH_SECRET` (`openssl rand -base64 32`).
+3. Install and set up the database:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   npm run db:migrate   # creates the tables
+   npm run db:seed      # loads categories and the 63 posts
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Sign up at `/sign-up`, then make yourself an admin:
 
-## Deploy on Vercel
+   ```bash
+   npm run make-admin -- you@example.com
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Optionally set `DISABLE_SIGNUP=true` to close public registration.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploying (Vercel)
+
+Import the repo in Vercel, add the environment variables from `.env.example` (set `BETTER_AUTH_URL` and `NEXT_PUBLIC_SITE_URL` to `https://plantbasedtribes.com`), and deploy. Run `npm run db:migrate` and `npm run db:seed` once against the production database.
+
+## Content
+
+- `content/posts/*.md`: post bodies with frontmatter (`title`, `excerpt`, `kind`, `prep`, `cook`, `servings`, `categories`)
+- `src/db/seed-data.json`: slugs, images and categories recovered from the old sitemaps
+
+Re-running `npm run db:seed` overwrites posts with the Markdown files, so once you start editing in `/admin`, treat the database as the source of truth.

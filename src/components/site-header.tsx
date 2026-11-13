@@ -4,7 +4,7 @@ import { NAV, SITE } from "@/lib/site";
 import { getSession } from "@/lib/auth";
 
 export async function SiteHeader() {
-  const session = await getSession().catch(() => null);
+  const session = await getSession();
   const isAdmin = (session?.user as { role?: string } | undefined)?.role === "admin";
   return (
     <header className="sticky top-0 z-30 border-b border-leaf-100 bg-[#fffdf8]/90 backdrop-blur">
