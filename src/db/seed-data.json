@@ -1,0 +1,795 @@
+{
+ "posts": [
+  {
+   "slug": "plant-based-protein-sources",
+   "title": "Plant Based Protein Sources",
+   "updatedAt": "2026-09-08T00:02:28+00:00",
+   "image": "/images/2026/09/plant-based-protein-sources.jpg",
+   "gallery": [],
+   "category": "articles"
+  },
+  {
+   "slug": "vegetable-smoothie",
+   "title": "Vegetable Smoothie",
+   "updatedAt": "2026-08-19T17:59:13+00:00",
+   "image": "/images/2022/06/vegetable-smoothie.jpg",
+   "gallery": [
+    "/images/2022/06/vegetable-smoothie-drink.jpg"
+   ],
+   "category": "drinks"
+  },
+  {
+   "slug": "pumpkin-pie-smoothie-drink-recipe",
+   "title": "Pumpkin Pie Smoothie Drink Recipe",
+   "updatedAt": "2026-08-19T17:59:11+00:00",
+   "image": "/images/2022/06/pumpkin-pie-smoothie.jpg",
+   "gallery": [],
+   "category": "drinks"
+  },
+  {
+   "slug": "tomato-basil-soup",
+   "title": "Tomato Basil Soup",
+   "updatedAt": "2026-08-19T17:52:38+00:00",
+   "image": "/images/2022/05/tomato-basil-soup-2.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "shaved-brussels-sprouts-salad",
+   "title": "Shaved Brussels Sprouts Salad",
+   "updatedAt": "2026-08-19T17:50:46+00:00",
+   "image": "/images/2022/05/shaved-brussel-sprout-salad-with-pecans.jpeg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "kale-salad-with-carrot-ginger-dressing-recipe",
+   "title": "Kale Salad with Carrot Ginger Dressing Recipe",
+   "updatedAt": "2026-08-19T17:50:42+00:00",
+   "image": "/images/2022/05/kale-salad-with-carrot-ginger-dressing.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "turmeric-ginger-iced-tea-recipe",
+   "title": "Turmeric Ginger Iced Tea Recipe",
+   "updatedAt": "2026-08-19T17:46:06+00:00",
+   "image": "/images/2022/06/turmeric-ginger-iced-tea.jpg",
+   "gallery": [],
+   "category": "drinks"
+  },
+  {
+   "slug": "green-berry-smoothie",
+   "title": "Green Berry Smoothie",
+   "updatedAt": "2026-08-19T17:45:51+00:00",
+   "image": "/images/2022/06/green-berry-smoothie.jpg",
+   "gallery": [],
+   "category": "drinks"
+  },
+  {
+   "slug": "asian-red-curry-soup",
+   "title": "Asian Red Curry Soup",
+   "updatedAt": "2026-08-19T17:45:49+00:00",
+   "image": "/images/2022/06/Asian-Red-Curry-Hot-Pot-broth-soup.jpg",
+   "gallery": [
+    "/images/2022/06/Asian-Red-Curry-Hot-Pot-broth.jpg"
+   ],
+   "category": "soups"
+  },
+  {
+   "slug": "spiced-peanut-sweet-potato-salad",
+   "title": "Spiced Peanut Sweet Potato Salad",
+   "updatedAt": "2026-08-19T17:45:46+00:00",
+   "image": "/images/2022/05/spiced-peanut-sweet-potato-salad.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "quinoa-chickpea-salad",
+   "title": "Quinoa Chickpea Salad",
+   "updatedAt": "2026-08-19T17:37:55+00:00",
+   "image": "/images/2022/05/quinoa-chickpea-salad-with-roasted-red-pepper-hummus-dressing.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "lemon-shortbread-cookies",
+   "title": "Lemon Shortbread Cookies",
+   "updatedAt": "2026-08-19T17:34:03+00:00",
+   "image": "/images/2022/06/lemon-shortbread-cookies-2.jpg",
+   "gallery": [
+    "/images/2022/06/lemon-shortbread-cookies.jpg"
+   ],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "grilled-summer-vegetable-salad",
+   "title": "Grilled Summer Vegetable Salad",
+   "updatedAt": "2026-08-19T17:32:04+00:00",
+   "image": "/images/2022/05/grilled-summer-vegetable-salad.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "grilled-peaches",
+   "title": "Grilled Peaches",
+   "updatedAt": "2026-08-19T17:31:52+00:00",
+   "image": "/images/2022/06/grilled-peaches.jpg",
+   "gallery": [],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "butternut-squash-soup",
+   "title": "Butternut Squash Soup",
+   "updatedAt": "2026-08-19T17:28:04+00:00",
+   "image": "/images/2022/06/butternut-squash-soup-recipe.jpg",
+   "gallery": [
+    "/images/2022/06/butternut-squash-soup.jpg"
+   ],
+   "category": "soups"
+  },
+  {
+   "slug": "banana-bread",
+   "title": "Banana Bread",
+   "updatedAt": "2026-08-19T17:27:59+00:00",
+   "image": "/images/2022/06/banana-bread.jpg",
+   "gallery": [
+    "/images/2022/06/banana-bread-2.jpg"
+   ],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "vegan-antipasto-chopped-salad",
+   "title": "Vegan Antipasto Chopped Salad",
+   "updatedAt": "2026-08-19T17:27:54+00:00",
+   "image": "/images/2022/05/vegan-antipasto-chopped-salad.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "tofu-cucumber-salad",
+   "title": "Tofu Cucumber Salad",
+   "updatedAt": "2026-08-19T17:27:50+00:00",
+   "image": "/images/2022/05/tofu-cucumber-salad-with-spicy-peanut-dressing.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "sesame-soba-noodles",
+   "title": "Sesame Soba Noodles",
+   "updatedAt": "2026-08-19T17:27:47+00:00",
+   "image": "/images/2022/05/sesame-soba.jpg",
+   "gallery": [],
+   "category": "noodles-and-sushi"
+  },
+  {
+   "slug": "lentil-soup",
+   "title": "Lentil Soup",
+   "updatedAt": "2026-08-19T17:17:20+00:00",
+   "image": "/images/2022/06/lentil-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "minestrone-soup",
+   "title": "Minestrone Soup",
+   "updatedAt": "2026-08-19T17:17:18+00:00",
+   "image": "/images/2022/06/minestrone-soup-2.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "cabbage-soup",
+   "title": "Cabbage Soup",
+   "updatedAt": "2026-08-19T17:13:26+00:00",
+   "image": "/images/2022/06/cabbage-soup-4.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "baked-apples",
+   "title": "Baked Apples",
+   "updatedAt": "2026-08-19T17:10:46+00:00",
+   "image": "/images/2022/06/baked-apples-1.jpg",
+   "gallery": [
+    "/images/2022/06/baked-apples.jpg"
+   ],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "super-green-pasta-salad",
+   "title": "Super Green Pasta Salad",
+   "updatedAt": "2026-08-19T17:00:45+00:00",
+   "image": "/images/2022/05/super-green-pasta-salad.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "portobello-mushroom-burger",
+   "title": "Portobello Mushroom Burger",
+   "updatedAt": "2026-08-19T16:58:10+00:00",
+   "image": "/images/2022/05/portobello-mushroom-burger.jpg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "indian-peanutty-noodles",
+   "title": "Indian Peanutty Noodles",
+   "updatedAt": "2026-08-19T16:58:06+00:00",
+   "image": "/images/2022/06/indian-peanutty-noodles.jpg",
+   "gallery": [],
+   "category": "noodles-and-sushi"
+  },
+  {
+   "slug": "healthy-taco-salad",
+   "title": "Healthy Taco Salad",
+   "updatedAt": "2026-08-19T16:54:47+00:00",
+   "image": "/images/2022/05/healthy-taco-salad.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "vegan-sugar-cookies",
+   "title": "Vegan Sugar Cookies",
+   "updatedAt": "2026-08-19T16:50:53+00:00",
+   "image": "/images/2022/06/vegan-sugar-cookies.jpg",
+   "gallery": [
+    "/images/2022/06/vegan-sugar-cookies-2-801x1024.jpg"
+   ],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "vegan-slow-cooker-tomatillo-stew",
+   "title": "Vegan Slow Cooker Tomatillo Stew",
+   "updatedAt": "2026-08-19T16:47:30+00:00",
+   "image": "/images/2022/05/vegan-slow-cooker-tomatillo-stew.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "roasted-cauliflower-steaks",
+   "title": "Roasted Cauliflower Steaks",
+   "updatedAt": "2026-08-19T16:47:28+00:00",
+   "image": "/images/2022/05/roasted-cauliflower-steaks-with-raisin-relish.jpeg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "golden-vegetable-soup",
+   "title": "Golden Vegetable Soup",
+   "updatedAt": "2026-08-19T16:47:07+00:00",
+   "image": "/images/2022/05/golden-vegetable-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "vegan-tortilla-soup",
+   "title": "Vegan Tortilla Soup",
+   "updatedAt": "2026-08-19T16:47:06+00:00",
+   "image": "/images/2022/05/vegan-tortilla-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "vegan-taco-salad",
+   "title": "Vegan Taco Salad",
+   "updatedAt": "2026-08-19T16:47:05+00:00",
+   "image": "/images/2022/05/vegan-taco-salad-2.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "vegan-pot-pie-with-herby-biscuits",
+   "title": "Vegan Pot Pie with Herby Biscuits",
+   "updatedAt": "2026-08-19T16:47:04+00:00",
+   "image": "/images/2022/05/vegan-pot-pie-with-herby-biscuits.jpg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "vegan-meatballs-noodles",
+   "title": "Vegan Meatballs Noodles",
+   "updatedAt": "2026-08-19T16:47:02+00:00",
+   "image": "/images/2022/05/vegan-meatballs-noodles.jpg",
+   "gallery": [],
+   "category": "noodles-and-sushi"
+  },
+  {
+   "slug": "vegan-broccoli-soup",
+   "title": "Vegan Broccoli Soup",
+   "updatedAt": "2026-08-19T16:47:01+00:00",
+   "image": "/images/2022/06/vegan-broccoli-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "vegan-blueberry-muffins",
+   "title": "Vegan Blueberry Muffins",
+   "updatedAt": "2026-08-19T16:46:59+00:00",
+   "image": "/images/2022/05/vegan-blueberry-muffins.jpeg",
+   "gallery": [],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "tomato-roasted-red-pepper-soup",
+   "title": "Tomato Roasted Red Pepper Soup",
+   "updatedAt": "2026-08-19T16:46:58+00:00",
+   "image": "/images/2022/06/tomato-and-roasted-red-pepper-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "sushi-salad",
+   "title": "Sushi Salad",
+   "updatedAt": "2026-08-19T16:46:56+00:00",
+   "image": "/images/2022/05/sushi-salad.jpg",
+   "gallery": [],
+   "category": "noodles-and-sushi"
+  },
+  {
+   "slug": "summer-fruit-tart",
+   "title": "Summer Fruit Tart",
+   "updatedAt": "2026-08-19T16:46:55+00:00",
+   "image": "/images/2022/06/summer-fruit-tart.jpg",
+   "gallery": [],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "spinach-and-mushroom-lasagna",
+   "title": "Spinach and Mushroom Lasagna",
+   "updatedAt": "2026-08-19T16:46:53+00:00",
+   "image": "/images/2022/05/vegan-spinach-and-mushroom-lasagna.jpeg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "rutabaga-laksa-noodles",
+   "title": "Rutabaga Laksa Noodles",
+   "updatedAt": "2026-08-19T16:46:52+00:00",
+   "image": "/images/2022/05/rutabaga-laksa-noodles.jpg",
+   "gallery": [],
+   "category": "noodles-and-sushi"
+  },
+  {
+   "slug": "roasted-cauliflower-salad",
+   "title": "Roasted Cauliflower Salad",
+   "updatedAt": "2026-08-19T16:46:51+00:00",
+   "image": "/images/2022/05/roasted-cauliflower.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "peanut-noodles-kale-bowl",
+   "title": "Peanut Noodles Kale Bowl",
+   "updatedAt": "2026-08-19T16:46:50+00:00",
+   "image": "/images/2022/05/peanut-noodle-kale-bowl.jpg",
+   "gallery": [],
+   "category": "noodles-and-sushi"
+  },
+  {
+   "slug": "marinated-tofu-salad",
+   "title": "Marinated Tofu Salad",
+   "updatedAt": "2026-08-19T16:46:48+00:00",
+   "image": "/images/2022/05/marinated-tofu-salad.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "marcella-hazans-white-bean-soup",
+   "title": "Marcella Hazan's White Bean Soup",
+   "updatedAt": "2026-08-19T16:46:47+00:00",
+   "image": "/images/2022/05/marcella-hazan-bean-soup-with-garlic-and-parsley.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "maki-sushi",
+   "title": "Maki Sushi",
+   "updatedAt": "2026-08-19T16:46:46+00:00",
+   "image": "/images/2022/06/maki-shushi-3.jpg",
+   "gallery": [],
+   "category": "noodles-and-sushi"
+  },
+  {
+   "slug": "instant-pot-black-bean-soup",
+   "title": "Instant Pot Black Bean Soup",
+   "updatedAt": "2026-08-19T16:46:45+00:00",
+   "image": "/images/2022/05/instant-pot-black-bean-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "gazpacho-soup",
+   "title": "Gazpacho Soup",
+   "updatedAt": "2026-08-19T16:46:44+00:00",
+   "image": "/images/2022/05/gazpacho-soup.jpeg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "chickpea-noodle-soup",
+   "title": "Chickpea Noodle Soup",
+   "updatedAt": "2026-08-19T16:46:43+00:00",
+   "image": "/images/2022/05/chickpea-noodle-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "carrot-ginger-soup",
+   "title": "Carrot Ginger Soup",
+   "updatedAt": "2026-08-19T16:46:41+00:00",
+   "image": "/images/2022/06/carrot-ginger-soup-2.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "bbq-pulled-jackfruit-sandwiches",
+   "title": "BBQ Pulled Jackfruit Sandwiches",
+   "updatedAt": "2026-08-19T16:46:40+00:00",
+   "image": "/images/2022/05/bbq-pulled-jackfruit-sandwiches.jpeg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "baked-falafel-with-cucumbers-and-tahini",
+   "title": "Baked Falafel with Cucumbers and Tahini",
+   "updatedAt": "2026-08-19T16:46:39+00:00",
+   "image": "/images/2022/05/baked-falafel-with-cucumbers-and-tahini.jpeg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "almond-milk-drink",
+   "title": "Almond Milk Drink",
+   "updatedAt": "2026-08-19T16:46:37+00:00",
+   "image": "/images/2022/06/almond-milk-drink.jpg",
+   "gallery": [],
+   "category": "drinks"
+  },
+  {
+   "slug": "almond-cherry-pepita-bars",
+   "title": "Almond Cherry Pepita Bars",
+   "updatedAt": "2026-08-19T16:46:36+00:00",
+   "image": "/images/2022/05/almond-cherry-pepita-bars.jpeg",
+   "gallery": [],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "peach-cobbler-with-ginger-biscuits",
+   "title": "Peach Cobbler with Ginger Biscuits",
+   "updatedAt": "2026-08-19T16:46:34+00:00",
+   "image": "/images/2022/06/peach-cobbler-with-ginger-biscuit.jpg",
+   "gallery": [],
+   "category": "desserts-and-snacks"
+  },
+  {
+   "slug": "baked-sweet-potatoes-salad",
+   "title": "Baked Sweet Potatoes Salad",
+   "updatedAt": "2026-08-19T16:46:33+00:00",
+   "image": "/images/2022/05/baked-sweet-potatoes-with-spiced-lentil-salad-and-lemon-tahini-dressing.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "yellow-split-pea-soup",
+   "title": "Yellow Split Pea Soup",
+   "updatedAt": "2026-08-19T16:46:32+00:00",
+   "image": "/images/2022/06/yellow-split-pea-soup.jpg",
+   "gallery": [],
+   "category": "soups"
+  },
+  {
+   "slug": "vegan-lentil-burgers",
+   "title": "Vegan Lentil Burgers",
+   "updatedAt": "2026-08-19T16:46:30+00:00",
+   "image": "/images/2022/05/vegan-lentil-burger.jpeg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "moroccan-harissa-roast-cauliflower",
+   "title": "Moroccan Harissa Roast Cauliflower",
+   "updatedAt": "2026-08-19T16:46:28+00:00",
+   "image": "/images/2022/05/moroccan-harrisa-roast-cauliflower.jpeg",
+   "gallery": [],
+   "category": "mains"
+  },
+  {
+   "slug": "radish-salad-recipe",
+   "title": "Radish Salad Recipe",
+   "updatedAt": "2026-08-19T16:10:28+00:00",
+   "image": "/images/2022/05/radish-salad.jpg",
+   "gallery": [],
+   "category": "salads"
+  },
+  {
+   "slug": "plant-based-diet-guide-for-beginners",
+   "title": "Plant Based Diet Guide for Beginners",
+   "updatedAt": "2026-08-18T18:51:34+00:00",
+   "image": "/images/2022/06/plant-based-ingredients.jpg",
+   "gallery": [
+    "/images/2022/06/plant-based-diet.webp"
+   ],
+   "category": "articles"
+  },
+  {
+   "slug": "plant-based-diet-meal-plan-for-beginners",
+   "title": "Plant Based Diet Meal Plan for Beginners",
+   "updatedAt": "2026-08-18T18:09:23+00:00",
+   "image": "/images/2026/07/plant-based-diet-meal-plan-for-beginners-thumbnail.jpg",
+   "gallery": [],
+   "category": "articles"
+  }
+ ],
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "updatedAt": "2023-01-30T07:52:58+00:00",
+   "images": [
+    "/images/2022/06/refrigerator-essentials-150x150.jpg",
+    "/images/2022/06/almond-milk-drink-150x150.jpg",
+    "/images/2022/06/green-berry-smoothie-150x150.jpg",
+    "/images/2022/06/moroccan-spiced-vegan-eggnog-drink-150x150.jpg",
+    "/images/2022/06/pumpkin-pie-smoothie-150x150.jpg",
+    "/images/2022/06/turmeric-ginger-iced-tea-150x150.jpg",
+    "/images/2022/06/refrigerator-essentials-150x150.jpg",
+    "/images/2022/05/shaved-brussel-sprout-salad-with-pecans-150x150.jpeg",
+    "/images/2022/05/marinated-tofu-salad-150x150.jpg",
+    "/images/2022/06/green-berry-smoothie-150x150.jpg",
+    "/images/2022/06/moroccan-spiced-vegan-eggnog-drink-150x150.jpg",
+    "/images/2022/06/pumpkin-pie-smoothie-150x150.jpg",
+    "/images/2022/06/yellow-split-pea-soup-150x150.jpg",
+    "/images/2022/06/Turkey-Pot-Pie-Soup-2-150x150.jpg",
+    "/images/2022/06/tomato-and-roasted-red-pepper-soup-150x150.jpg",
+    "/images/2022/06/almond-milk-drink-150x150.jpg",
+    "/images/2022/06/green-berry-smoothie-150x150.jpg"
+   ]
+  },
+  {
+   "slug": "tips",
+   "title": "Tips",
+   "updatedAt": "2026-04-14T15:50:36+00:00",
+   "images": []
+  },
+  {
+   "slug": "plant-based-recipe",
+   "title": "Plant Based Recipe",
+   "updatedAt": "2022-08-26T07:25:09+00:00",
+   "images": [
+    "/images/2022/04/2873067.png",
+    "/images/2022/05/radish-salad.jpg",
+    "/images/2022/05/kale-salad-with-carrot-ginger-dressing.jpg",
+    "/images/2022/05/roasted-cauliflower.jpg",
+    "/images/2022/05/healthy-taco-salad.jpg",
+    "/images/2022/05/sushi-salad.jpg",
+    "/images/2022/05/spiced-peanut-sweet-potato-salad.jpg",
+    "/images/2022/05/baked-sweet-potatoes-with-spiced-lentil-salad-and-lemon-tahini-dressing.jpg",
+    "/images/2022/05/super-green-pasta-salad.jpg",
+    "/images/2022/05/vegan-antipasto-chopped-salad.jpg",
+    "/images/2022/05/vegan-taco-salad-2.jpg",
+    "/images/2022/05/quinoa-chickpea-salad-with-roasted-red-pepper-hummus-dressing.jpg",
+    "/images/2022/05/tofu-cucumber-salad-with-spicy-peanut-dressing.jpg",
+    "/images/2022/05/grilled-summer-vegetable-salad.jpg",
+    "/images/2022/05/marinated-tofu-salad-1024x1024.jpg",
+    "/images/2022/05/shaved-brussel-sprout-salad-with-pecans.jpeg",
+    "/images/2022/05/vegan-meatballs-noodles.jpg",
+    "/images/2022/06/indian-peanutty-noodles.jpg",
+    "/images/2022/05/rutabaga-laksa-noodles.jpg",
+    "/images/2022/05/sesame-noodles.jpg",
+    "/images/2022/05/maki-sushi.jpg",
+    "/images/2022/05/peanut-noodle-kale-bowl.jpg",
+    "/images/2022/05/vegan-broccoli-soup-2.jpg",
+    "/images/2022/05/lentil-soup-recipe.jpg",
+    "/images/2022/05/tomato-basil-soup-2.jpg",
+    "/images/2022/05/vegan-slow-cooker-tomatillo-stew.jpg",
+    "/images/2022/05/instant-pot-black-bean-soup.jpg",
+    "/images/2022/05/marcella-hazan-bean-soup-with-garlic-and-parsley.jpg",
+    "/images/2022/05/chickpea-noodle-soup.jpg",
+    "/images/2022/05/vegan-tortilla-soup-683x1024.jpg",
+    "/images/2022/05/golden-vegetable-soup-1024x1024.jpg",
+    "/images/2022/05/gazpacho-soup.jpeg",
+    "/images/2022/05/portobello-mushroom-burger.jpg",
+    "/images/2022/05/bbq-pulled-jackfruit-sandwiches.jpeg",
+    "/images/2022/05/baked-falafel-with-cucumbers-and-tahini.jpeg",
+    "/images/2022/05/vegan-lentil-burger.jpeg",
+    "/images/2022/05/moroccan-harrisa-roast-cauliflower.jpeg",
+    "/images/2022/05/almond-cherry-pepita-bars.jpeg",
+    "/images/2022/05/vegan-blueberry-muffins.jpeg",
+    "/images/2022/05/roasted-cauliflower-steaks-with-raisin-relish.jpeg",
+    "/images/2022/05/vegan-spinach-and-mushroom-lasagna.jpeg",
+    "/images/2022/05/vegan-pot-pie-with-herby-biscuits.jpg"
+   ]
+  },
+  {
+   "slug": "about-author",
+   "title": "About Author",
+   "updatedAt": "2022-07-04T15:54:41+00:00",
+   "images": [
+    "/images/2022/04/pretty-farmer-43YXKDP-1.jpg"
+   ]
+  },
+  {
+   "slug": "blog",
+   "title": "Blog",
+   "updatedAt": "2022-04-08T01:23:27+00:00",
+   "images": []
+  }
+ ],
+ "categories": [
+  {
+   "path": "soups",
+   "slug": "soups",
+   "name": "Soups",
+   "parent": null
+  },
+  {
+   "path": "salads",
+   "slug": "salads",
+   "name": "Salads",
+   "parent": null
+  },
+  {
+   "path": "desserts-and-snacks",
+   "slug": "desserts-and-snacks",
+   "name": "Desserts and Snacks",
+   "parent": null
+  },
+  {
+   "path": "drinks",
+   "slug": "drinks",
+   "name": "Drinks",
+   "parent": null
+  },
+  {
+   "path": "noodles-and-sushi",
+   "slug": "noodles-and-sushi",
+   "name": "Noodles and Sushi",
+   "parent": null
+  },
+  {
+   "path": "recipe/diet/vegan",
+   "slug": "vegan",
+   "name": "Vegan",
+   "parent": "recipe/diet"
+  },
+  {
+   "path": "recipe/diet/detox",
+   "slug": "detox",
+   "name": "Detox",
+   "parent": "recipe/diet"
+  },
+  {
+   "path": "recipe/diet/gluten-free",
+   "slug": "gluten-free",
+   "name": "Gluten Free",
+   "parent": "recipe/diet"
+  },
+  {
+   "path": "recipe/season/summer",
+   "slug": "summer",
+   "name": "Summer",
+   "parent": "recipe/season"
+  },
+  {
+   "path": "recipe/season/autumn",
+   "slug": "autumn",
+   "name": "Autumn",
+   "parent": "recipe/season"
+  },
+  {
+   "path": "recipe/season/spring",
+   "slug": "spring",
+   "name": "Spring",
+   "parent": "recipe/season"
+  },
+  {
+   "path": "recipe/season/winter",
+   "slug": "winter",
+   "name": "Winter",
+   "parent": "recipe/season"
+  },
+  {
+   "path": "articles",
+   "slug": "articles",
+   "name": "Articles",
+   "parent": null
+  },
+  {
+   "path": "articles/mindset/beginners-guide",
+   "slug": "beginners-guide",
+   "name": "Beginners Guide",
+   "parent": "articles/mindset"
+  },
+  {
+   "path": "articles/nourishment/nutrition",
+   "slug": "nutrition",
+   "name": "Nutrition",
+   "parent": "articles/nourishment"
+  },
+  {
+   "path": "method/10-ingredients-or-less",
+   "slug": "10-ingredients-or-less",
+   "name": "10 Ingredients or Less",
+   "parent": "method"
+  },
+  {
+   "path": "method/30-minutes-or-less",
+   "slug": "30-minutes-or-less",
+   "name": "30 Minutes or Less",
+   "parent": "method"
+  },
+  {
+   "path": "method/budget-friendly",
+   "slug": "budget-friendly",
+   "name": "Budget Friendly",
+   "parent": "method"
+  },
+  {
+   "path": "method/comfort-food",
+   "slug": "comfort-food",
+   "name": "Comfort Food",
+   "parent": "method"
+  },
+  {
+   "path": "method/instant-pot",
+   "slug": "instant-pot",
+   "name": "Instant Pot",
+   "parent": "method"
+  },
+  {
+   "path": "method/kids-friendly",
+   "slug": "kids-friendly",
+   "name": "Kids Friendly",
+   "parent": "method"
+  },
+  {
+   "path": "method/easy-weeknight-dinners",
+   "slug": "easy-weeknight-dinners",
+   "name": "Easy Weeknight Dinners",
+   "parent": "method"
+  },
+  {
+   "path": "recipe/diet",
+   "slug": "diet",
+   "name": "Diet",
+   "parent": "recipe"
+  },
+  {
+   "path": "recipe",
+   "slug": "recipe",
+   "name": "Recipe",
+   "parent": null
+  },
+  {
+   "path": "recipe/season",
+   "slug": "season",
+   "name": "Season",
+   "parent": "recipe"
+  },
+  {
+   "path": "articles/mindset",
+   "slug": "mindset",
+   "name": "Mindset",
+   "parent": "articles"
+  },
+  {
+   "path": "articles/nourishment",
+   "slug": "nourishment",
+   "name": "Nourishment",
+   "parent": "articles"
+  },
+  {
+   "path": "method",
+   "slug": "method",
+   "name": "Method",
+   "parent": null
+  },
+  {
+   "path": "mains",
+   "slug": "mains",
+   "name": "Mains",
+   "parent": null
+  }
+ ]
+}
