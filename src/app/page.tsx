@@ -1,103 +1,102 @@
 import Image from "next/image";
+import Link from "next/link";
+import { PostGrid } from "@/components/post-card";
+import { getPostsInCategory, getPublishedPosts } from "@/lib/content";
 
-export default function Home() {
+const COLLECTIONS = [
+  { path: "soups", label: "Soups", image: "/images/2022/06/butternut-squash-soup-recipe.jpg" },
+  { path: "salads", label: "Salads", image: "/images/2022/05/quinoa-chickpea-salad-with-roasted-red-pepper-hummus-dressing.jpg" },
+  { path: "noodles-and-sushi", label: "Noodles & sushi", image: "/images/2022/05/sesame-soba.jpg" },
+  { path: "drinks", label: "Drinks", image: "/images/2022/06/green-berry-smoothie.jpg" },
+  { path: "desserts-and-snacks", label: "Desserts", image: "/images/2022/06/summer-fruit-tart.jpg" },
+  { path: "method/30-minutes-or-less", label: "30 minutes or less", image: "/images/2022/05/peanut-noodle-kale-bowl.jpg" },
+];
+
+export default async function Home() {
+  const [latest, guides] = await Promise.all([
+    getPublishedPosts({ limit: 9 }),
+    getPostsInCategory("articles"),
+  ]);
+  const hero = latest.find((p) => p.kind === "recipe") ?? latest[0];
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <section className="bg-leaf-50">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-20">
+          <div>
+            <p className="font-script text-2xl text-leaf-700">Welcome to the tribe</p>
+            <h1 className="mt-2 text-4xl font-bold leading-tight text-leaf-900 md:text-5xl">
+              Plant-based food that&apos;s easy, colourful and full of flavour.
+            </h1>
+            <p className="mt-4 max-w-prose text-lg text-muted">
+              Weeknight soups, big bright salads, smoothies and treats, plus friendly guides for anyone starting out
+              on a plant-based diet.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/plant-based-recipe" className="rounded-full bg-leaf-900 px-6 py-3 font-semibold text-white hover:bg-leaf-700">
+                Browse recipes
+              </Link>
+              <Link
+                href="/plant-based-diet-guide-for-beginners"
+                className="rounded-full bg-sun-400 px-6 py-3 font-semibold text-leaf-900 hover:brightness-95"
+              >
+                Beginner&apos;s guide
+              </Link>
+            </div>
+          </div>
+          {hero?.image && (
+            <Link href={`/${hero.slug}`} className="group relative block aspect-[5/4] overflow-hidden rounded-3xl shadow-lg">
+              <Image src={hero.image} alt={hero.imageAlt ?? hero.title} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+              <span className="absolute bottom-4 left-4 right-4 rounded-2xl bg-white/90 px-4 py-3 text-sm font-semibold text-leaf-900 backdrop-blur">
+                Latest: {hero.title}
+              </span>
+            </Link>
+          )}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14">
+        <h2 className="text-2xl font-bold text-leaf-900">Find your next favourite</h2>
+        <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+          {COLLECTIONS.map((c) => (
+            <Link key={c.path} href={`/category/${c.path}`} className="group relative aspect-square overflow-hidden rounded-2xl">
+              <Image src={c.image} alt="" fill sizes="(min-width: 1024px) 16vw, 50vw" className="object-cover transition group-hover:scale-105" />
+              <span className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3 text-sm font-semibold text-white">
+                {c.label}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4">
+        <div className="flex items-end justify-between">
+          <h2 className="text-2xl font-bold text-leaf-900">Fresh from the kitchen</h2>
+          <Link href="/blog" className="text-sm font-semibold text-leaf-700 hover:underline">
+            See all →
+          </Link>
+        </div>
+        <div className="mt-6">
+          <PostGrid posts={latest} />
+        </div>
+      </section>
+
+      {guides.length > 0 && (
+        <section className="mx-auto mt-16 max-w-6xl px-4">
+          <div className="rounded-3xl bg-leaf-900 p-8 text-white md:p-12">
+            <p className="font-script text-2xl text-sun-400">New to plant-based?</p>
+            <h2 className="mt-1 text-3xl font-bold">Start here</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {guides.slice(0, 3).map((g) => (
+                <Link key={g.slug} href={`/${g.slug}`} className="rounded-2xl bg-white/10 p-5 hover:bg-white/15">
+                  <p className="font-semibold">{g.title}</p>
+                  <p className="mt-2 line-clamp-2 text-sm text-leaf-100">{g.excerpt}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </>
   );
 }
