@@ -7,10 +7,10 @@ export const metadata: Metadata = { title: "All posts" };
 export default async function Blog() {
   const posts = await getPublishedPosts({ limit: 500 });
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="text-4xl font-bold text-leaf-900">All posts</h1>
-      <p className="mt-2 text-muted">{posts.length} recipes and guides.</p>
-      <div className="mt-10">
+    <div className="mx-auto max-w-7xl px-6 pt-12 md:pt-20 lg:px-10">
+      <h1 className="display text-[2.5rem] text-ink md:text-6xl">All posts</h1>
+      <p className="mt-4 text-lg text-muted">{posts.length} recipes and guides.</p>
+      <div className="mt-10 md:mt-14">
         <PostGrid posts={posts} />
       </div>
     </div>

@@ -11,12 +11,12 @@ export default async function Account() {
   if (!session) redirect("/sign-in");
   const role = (session.user as { role?: string }).role;
   return (
-    <div className="mx-auto max-w-md px-4 py-16">
-      <h1 className="text-3xl font-bold text-leaf-900">Hi, {session.user.name}</h1>
-      <p className="mt-2 text-muted">{session.user.email}</p>
-      <div className="mt-8 flex gap-3">
+    <div className="mx-auto max-w-md px-6 pt-12 md:pt-20">
+      <h1 className="display text-4xl text-ink md:text-5xl">Hi, {session.user.name}</h1>
+      <p className="mt-3 text-lg text-muted">{session.user.email}</p>
+      <div className="mt-8 flex flex-wrap items-center gap-3">
         {role === "admin" && (
-          <Link href="/admin" className="rounded-full bg-leaf-900 px-5 py-2 font-medium text-white">
+          <Link href="/admin" className="btn">
             Manage posts
           </Link>
         )}

@@ -63,40 +63,49 @@ export default async function PostPage({ params }: Props) {
   return (
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <header className="mx-auto max-w-3xl px-4 pt-10 text-center">
-        <div className="flex flex-wrap justify-center gap-2">
-          {cats.map((c) => (
-            <Link key={c.id} href={`/category/${c.path}`} className="rounded-full bg-leaf-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-leaf-700">
-              {c.name}
-            </Link>
-          ))}
-        </div>
-        <h1 className="mt-4 text-3xl font-bold leading-tight text-leaf-900 md:text-5xl">{p.title}</h1>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">{p.excerpt}</p>
+      <header className="mx-auto max-w-4xl px-6 pt-12 text-center md:pt-20">
+        <h1 className="display text-[2.5rem] text-ink md:text-6xl">{p.title}</h1>
+        <p className="mx-auto mt-5 max-w-[38rem] text-lg leading-relaxed text-muted">{p.excerpt}</p>
         {facts.length > 0 && (
-          <dl className="mx-auto mt-6 flex max-w-md justify-center divide-x divide-leaf-200 rounded-2xl bg-leaf-50 py-3">
+          <dl className="mx-auto mt-8 flex w-fit divide-x divide-line rounded-2xl border border-line bg-white py-3">
             {facts.map(([k, v]) => (
-              <div key={k} className="px-5">
-                <dt className="text-xs uppercase tracking-wide text-muted">{k}</dt>
-                <dd className="font-semibold text-leaf-900">{v}</dd>
+              <div key={k} className="px-6">
+                <dt className="text-[13px] font-medium text-muted">{k}</dt>
+                <dd className="mt-0.5 font-semibold whitespace-nowrap text-ink">{v}</dd>
               </div>
             ))}
           </dl>
         )}
       </header>
       {p.image && (
-        <div className="relative mx-auto mt-8 aspect-[16/10] max-w-4xl overflow-hidden md:rounded-3xl">
-          <Image src={p.image} alt={p.imageAlt ?? p.title} fill priority sizes="(min-width: 896px) 896px, 100vw" className="object-cover" />
+        <div className="relative mx-auto mt-10 aspect-[16/10] max-w-5xl overflow-hidden bg-surface md:mt-14 md:rounded-3xl">
+          <Image src={p.image} alt={p.imageAlt ?? p.title} fill priority sizes="(min-width: 1024px) 1024px, 100vw" className="object-cover" />
         </div>
       )}
       <div
-        className="prose prose-lg prose-recipe prose-headings:font-bold prose-a:text-leaf-700 mx-auto mt-10 max-w-3xl px-4"
+        className="prose prose-lg prose-recipe prose-a:font-semibold mx-auto mt-12 max-w-[40rem] px-6 md:mt-16 md:px-0"
         dangerouslySetInnerHTML={{ __html: html }}
       />
+      {cats.length > 0 && (
+        <nav aria-label="Filed under" className="mx-auto mt-12 max-w-[40rem] border-t border-line px-6 pt-8 md:px-0">
+          <p className="text-[13px] font-medium text-muted">Filed under</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {cats.map((c) => (
+              <Link key={c.id} href={`/category/${c.path}`} className="chip">
+                {c.name}
+              </Link>
+            ))}
+          </div>
+        </nav>
+      )}
       {related.length > 0 && (
-        <section className="mx-auto mt-16 max-w-6xl px-4">
-          <h2 className="mb-6 text-2xl font-bold text-leaf-900">You might also like</h2>
-          <PostGrid posts={related} />
+        <section className="mx-auto max-w-7xl px-6 pt-24 md:pt-32 lg:px-10">
+          <h2 className="display text-3xl text-ink md:text-[2.75rem]">
+            You might also like. <span className="text-muted">More from the same shelf.</span>
+          </h2>
+          <div className="mt-8 md:mt-12">
+            <PostGrid posts={related} />
+          </div>
         </section>
       )}
     </article>

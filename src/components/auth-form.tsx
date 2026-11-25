@@ -27,21 +27,21 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
     router.refresh();
   }
 
-  const input = "w-full rounded-xl border border-leaf-200 px-4 py-3 outline-none focus:ring-2 focus:ring-leaf-400";
+  const input = "field mt-1.5";
   return (
-    <form onSubmit={onSubmit} className="mt-8 space-y-4">
+    <form onSubmit={onSubmit} className="mt-8 space-y-5">
       {mode === "sign-up" && (
         <label className="block">
-          <span className="text-sm font-medium">Name</span>
+          <span className="text-sm font-medium text-ink">Name</span>
           <input name="name" required autoComplete="name" className={input} />
         </label>
       )}
       <label className="block">
-        <span className="text-sm font-medium">Email</span>
+        <span className="text-sm font-medium text-ink">Email</span>
         <input name="email" type="email" required autoComplete="email" className={input} />
       </label>
       <label className="block">
-        <span className="text-sm font-medium">Password</span>
+        <span className="text-sm font-medium text-ink">Password</span>
         <input
           name="password"
           type="password"
@@ -51,15 +51,19 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
           className={input}
         />
       </label>
-      {error && <p className="rounded-xl bg-red-50 px-4 py-2 text-sm text-red-700">{error}</p>}
-      <button disabled={pending} className="w-full rounded-full bg-leaf-900 py-3 font-semibold text-white disabled:opacity-60">
+      {error && (
+        <p role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-red-800">
+          {error}
+        </p>
+      )}
+      <button disabled={pending} className="btn w-full">
         {pending ? "Please wait…" : mode === "sign-in" ? "Sign in" : "Create account"}
       </button>
-      <p className="text-center text-sm text-muted">
+      <p className="text-center text-muted">
         {mode === "sign-in" ? (
-          <>No account yet? <Link href="/sign-up" className="font-semibold text-leaf-700">Sign up</Link></>
+          <>No account yet? <Link href="/sign-up" className="font-semibold text-leaf-900 underline underline-offset-4">Sign up</Link></>
         ) : (
-          <>Already a member? <Link href="/sign-in" className="font-semibold text-leaf-700">Sign in</Link></>
+          <>Already a member? <Link href="/sign-in" className="font-semibold text-leaf-900 underline underline-offset-4">Sign in</Link></>
         )}
       </p>
     </form>
@@ -75,7 +79,7 @@ export function SignOutButton() {
         router.push("/");
         router.refresh();
       }}
-      className="rounded-full border border-leaf-200 px-5 py-2 font-medium hover:bg-leaf-50"
+      className="link-arrow"
     >
       Sign out
     </button>

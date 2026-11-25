@@ -10,7 +10,7 @@ export default async function AdminHome({ searchParams }: { searchParams: Promis
       {saved && <p className="mb-4 rounded-xl bg-leaf-50 px-4 py-2 text-sm text-leaf-900">Saved “{saved}”.</p>}
       <div className="overflow-x-auto rounded-2xl ring-1 ring-leaf-100">
         <table className="w-full text-left text-sm">
-          <thead className="bg-leaf-50 text-xs uppercase tracking-wide text-muted">
+          <thead className="bg-surface text-[13px] font-medium text-muted">
             <tr>
               <th className="px-4 py-3">Title</th>
               <th className="px-4 py-3">Type</th>
