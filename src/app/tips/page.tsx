@@ -19,20 +19,21 @@ const TIPS = [
 
 export default function Tips() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-14">
-      <h1 className="text-4xl font-bold text-leaf-900">Plant-based kitchen tips</h1>
-      <p className="mt-3 text-lg text-muted">Small habits that make plant-based cooking easier and tastier.</p>
-      <ol className="mt-10 grid gap-5 md:grid-cols-2">
+    <div className="mx-auto max-w-5xl px-6 pt-12 md:pt-20 lg:px-10">
+      <h1 className="display text-[2.5rem] text-ink md:text-6xl">
+        Plant-based kitchen tips. <span className="text-muted">Small habits, better food.</span>
+      </h1>
+      <ol className="mt-10 grid gap-3 md:mt-14 md:grid-cols-2 md:gap-6">
         {TIPS.map(([t, d], i) => (
-          <li key={t} className="rounded-2xl bg-leaf-50 p-6">
-            <span className="text-sm font-bold text-leaf-500">{String(i + 1).padStart(2, "0")}</span>
-            <h2 className="mt-1 text-lg font-semibold text-leaf-900">{t}</h2>
-            <p className="mt-2 text-muted">{d}</p>
+          <li key={t} className="rounded-2xl border border-line bg-white p-6 md:p-8">
+            <span className="text-[13px] font-medium text-muted tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+            <h2 className="mt-2 text-xl font-semibold tracking-[-0.015em] text-ink">{t}</h2>
+            <p className="mt-2 leading-relaxed text-muted">{d}</p>
           </li>
         ))}
       </ol>
-      <p className="mt-10">
-        New to all this? Read the <Link href="/plant-based-diet-guide-for-beginners" className="font-semibold text-leaf-700 underline">beginner&apos;s guide</Link>.
+      <p className="mt-10 text-lg">
+        New to all this? Read the <Link href="/plant-based-diet-guide-for-beginners" className="font-semibold text-leaf-900 underline underline-offset-4">beginner&apos;s guide</Link>.
       </p>
     </div>
   );

@@ -21,76 +21,97 @@ export default async function Home() {
 
   return (
     <>
-      <section className="bg-leaf-50">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-20">
-          <div>
-            <p className="font-script text-2xl text-leaf-700">Welcome to the tribe</p>
-            <h1 className="mt-2 text-4xl font-bold leading-tight text-leaf-900 md:text-5xl">
-              Plant-based food that&apos;s easy, colourful and full of flavour.
-            </h1>
-            <p className="mt-4 max-w-prose text-lg text-muted">
-              Weeknight soups, big bright salads, smoothies and treats, plus friendly guides for anyone starting out
-              on a plant-based diet.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/plant-based-recipe" className="rounded-full bg-leaf-900 px-6 py-3 font-semibold text-white hover:bg-leaf-700">
-                Browse recipes
-              </Link>
-              <Link
-                href="/plant-based-diet-guide-for-beginners"
-                className="rounded-full bg-sun-400 px-6 py-3 font-semibold text-leaf-900 hover:brightness-95"
-              >
-                Beginner&apos;s guide
-              </Link>
-            </div>
-          </div>
-          {hero?.image && (
-            <Link href={`/${hero.slug}`} className="group relative block aspect-[5/4] overflow-hidden rounded-3xl shadow-lg">
-              <Image src={hero.image} alt={hero.imageAlt ?? hero.title} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
-              <span className="absolute bottom-4 left-4 right-4 rounded-2xl bg-white/90 px-4 py-3 text-sm font-semibold text-leaf-900 backdrop-blur">
-                Latest: {hero.title}
-              </span>
+      <section className="mx-auto grid max-w-7xl items-center gap-10 px-6 pt-12 pb-16 md:grid-cols-12 md:gap-12 md:pt-20 md:pb-24 lg:px-10">
+        <div className="md:col-span-6">
+          <h1 className="display enter text-[2.75rem] text-ink sm:text-6xl lg:text-[4.25rem]">
+            Plant-based food that&apos;s easy and colourful.{" "}
+            <span className="text-muted">Full of flavour, every night.</span>
+          </h1>
+          <p className="enter enter-2 mt-6 max-w-[34rem] text-lg leading-relaxed text-muted">
+            Weeknight soups, big bright salads, smoothies and treats, plus friendly guides for anyone starting out on
+            a plant-based diet.
+          </p>
+          <div className="enter enter-3 mt-9 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-7">
+            <Link href="/plant-based-recipe" className="btn w-full sm:w-auto">
+              Browse recipes
             </Link>
-          )}
+            <Link href="/plant-based-diet-guide-for-beginners" className="link-arrow justify-center">
+              Read the beginner&apos;s guide
+            </Link>
+          </div>
         </div>
+        {hero?.image && (
+          <Link
+            href={`/${hero.slug}`}
+            aria-label={`Latest recipe: ${hero.title}`}
+            className="group relative block aspect-[4/5] overflow-hidden rounded-3xl bg-surface md:col-span-6 md:aspect-[5/6] lg:aspect-[1/1]"
+          >
+            <Image
+              src={hero.image}
+              alt={hero.imageAlt ?? hero.title}
+              fill
+              priority
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="card-photo object-cover"
+            />
+          </Link>
+        )}
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-14">
-        <h2 className="text-2xl font-bold text-leaf-900">Find your next favourite</h2>
-        <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+      <section className="mx-auto max-w-7xl px-6 pt-12 md:pt-20 lg:px-10">
+        <h2 className="display text-3xl text-ink md:text-[2.75rem]">
+          Find your next favourite. <span className="text-muted">Pick a course.</span>
+        </h2>
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-6 md:mt-12 md:grid-cols-3 lg:grid-cols-6">
           {COLLECTIONS.map((c) => (
-            <Link key={c.path} href={`/category/${c.path}`} className="group relative aspect-square overflow-hidden rounded-2xl">
-              <Image src={c.image} alt="" fill sizes="(min-width: 1024px) 16vw, 50vw" className="object-cover transition group-hover:scale-105" />
-              <span className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3 text-sm font-semibold text-white">
+            <Link key={c.path} href={`/category/${c.path}`} className="group block">
+              <div className="relative aspect-square overflow-hidden rounded-2xl bg-surface">
+                <Image src={c.image} alt="" fill sizes="(min-width: 1024px) 16vw, 50vw" className="card-photo object-cover" />
+              </div>
+              <p className="mt-3 flex items-center gap-1.5 font-medium text-ink">
                 {c.label}
-              </span>
+                <span aria-hidden="true" className="transition-transform duration-150 group-hover:translate-x-[3px]">
+                  →
+                </span>
+              </p>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4">
-        <div className="flex items-end justify-between">
-          <h2 className="text-2xl font-bold text-leaf-900">Fresh from the kitchen</h2>
-          <Link href="/blog" className="text-sm font-semibold text-leaf-700 hover:underline">
-            See all →
+      <section className="mx-auto max-w-7xl px-6 pt-24 md:pt-32 lg:px-10">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <h2 className="display text-3xl text-ink md:text-[2.75rem]">
+            Fresh from the kitchen. <span className="text-muted">The latest recipes and guides.</span>
+          </h2>
+          <Link href="/blog" className="link-arrow">
+            See all posts
           </Link>
         </div>
-        <div className="mt-6">
+        <div className="mt-8 md:mt-12">
           <PostGrid posts={latest} />
         </div>
       </section>
 
       {guides.length > 0 && (
-        <section className="mx-auto mt-16 max-w-6xl px-4">
-          <div className="rounded-3xl bg-leaf-900 p-8 text-white md:p-12">
-            <p className="font-script text-2xl text-sun-400">New to plant-based?</p>
-            <h2 className="mt-1 text-3xl font-bold">Start here</h2>
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
+        <section className="mx-auto max-w-7xl px-6 pt-24 md:pt-32 lg:px-10">
+          <div className="rounded-3xl bg-leaf-900 px-6 py-10 text-white md:px-12 md:py-16">
+            <h2 className="display text-3xl md:text-[2.75rem]">
+              New to plant-based? <span className="text-leaf-200">Start here.</span>
+            </h2>
+            <div className="mt-8 grid gap-3 md:mt-12 md:grid-cols-3 md:gap-6">
               {guides.slice(0, 3).map((g) => (
-                <Link key={g.slug} href={`/${g.slug}`} className="rounded-2xl bg-white/10 p-5 hover:bg-white/15">
-                  <p className="font-semibold">{g.title}</p>
-                  <p className="mt-2 line-clamp-2 text-sm text-leaf-100">{g.excerpt}</p>
+                <Link
+                  key={g.slug}
+                  href={`/${g.slug}`}
+                  className="group flex flex-col rounded-2xl border border-white/15 p-6 transition duration-150 hover:-translate-y-0.5 hover:border-white/35"
+                >
+                  <p className="font-display text-xl font-semibold leading-snug tracking-[-0.015em]">{g.title}</p>
+                  <p className="mt-2 line-clamp-2 leading-relaxed text-leaf-100">{g.excerpt}</p>
+                  <span className="mt-6 font-semibold text-white" aria-hidden="true">
+                    Read the guide{" "}
+                    <span className="inline-block transition-transform duration-150 group-hover:translate-x-[3px]">→</span>
+                  </span>
                 </Link>
               ))}
             </div>

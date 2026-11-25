@@ -19,19 +19,21 @@ export default async function Recipes() {
   const [posts, cats] = await Promise.all([getPublishedPosts({ limit: 500 }), getAllCategories()]);
   const recipes = posts.filter((p) => p.kind === "recipe");
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="text-4xl font-bold text-leaf-900">Plant-based recipes</h1>
-      <div className="mt-8 grid gap-6 md:grid-cols-4">
+    <div className="mx-auto max-w-7xl px-6 pt-12 md:pt-20 lg:px-10">
+      <h1 className="display text-[2.5rem] text-ink md:text-6xl">
+        Plant-based recipes. <span className="text-muted">Every one of them.</span>
+      </h1>
+      <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 border-y border-line py-8 md:mt-14 md:grid-cols-4">
         {GROUPS.map((g) => {
           const list = g.paths ? cats.filter((c) => g.paths!.includes(c.path)) : cats.filter((c) => c.parentPath === g.parent);
           return (
             <div key={g.title}>
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-muted">{g.title}</h2>
-              <ul className="mt-2 space-y-1">
+              <h2 className="font-sans text-[13px] font-medium text-muted">{g.title}</h2>
+              <ul className="mt-2">
                 {list.map((c) => (
                   <li key={c.id}>
-                    <Link href={`/category/${c.path}`} className="text-leaf-900 hover:underline">
-                      {c.name}
+                    <Link href={`/category/${c.path}`} className="inline-flex min-h-9 items-center text-ink">
+                      <span className="link-draw">{c.name}</span>
                     </Link>
                   </li>
                 ))}
@@ -40,7 +42,7 @@ export default async function Recipes() {
           );
         })}
       </div>
-      <div className="mt-12">
+      <div className="mt-10 md:mt-14">
         <PostGrid posts={recipes} />
       </div>
     </div>
